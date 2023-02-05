@@ -3,6 +3,7 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import Componente from './components/Componente.jsx';
 import './App.css';
+import Propiedades from './components/Propiedades.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +14,8 @@ function App() {
     <>
     <header>
     <div className="App">
+    <section>
+      
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
@@ -33,7 +36,9 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <label htmlFor='nombre'>Nombre </label>
+    </section>
+    <section>
+          <label htmlFor='nombre'>Nombre </label>
       <br></br>
       <input type='text' id='nombre' />
       <h2>{nombre}</h2>
@@ -44,10 +49,23 @@ function App() {
           <li key={index}>{el}</li>
           ))}
       </ul>
-    </div>
+    
+    </section>
+  </div>
     <section>
+    <hr />
     <Componente msg="Hola soy un componente Funcional expresado desde una prop."/>
-    <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+    <hr />
+    <Propiedades 
+      cadena="Esto es una cadena de texto" 
+      numero = {19} 
+      booleano = {false}
+      arreglo={[1,2,3]}
+      objeto={{nombre:"Jon", correo: "Jonmircha@gmail.com"}}
+      funcion={num => num * num}
+      elementoReact={<i>Esto es un elemento React</i>}
+      componenteReact={<Componente msg="Soy un componente pasado como props" />}
+    />
     </section>
     </header>
     </>
