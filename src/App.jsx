@@ -1,6 +1,8 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import React from 'react';
+import { useState } from 'react';
+import reactLogo from './assets/react.svg';
+import Componente from './components/Componente.jsx';
+import './App.css';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,6 +11,7 @@ function App() {
   let estaciones = ["Primavera", "Verano", "Otoño", "Invierno"];
   return (
     <>
+    <header>
     <div className="App">
       <div>
         <a href="https://vitejs.dev" target="_blank">
@@ -42,6 +45,11 @@ function App() {
           ))}
       </ul>
     </div>
+    <section>
+    <Componente msg="Hola soy un componente Funcional expresado desde una prop."/>
+    <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+    </section>
+    </header>
     </>
   )
 }
