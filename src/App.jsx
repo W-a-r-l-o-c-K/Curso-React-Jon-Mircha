@@ -4,6 +4,7 @@ import reactLogo from './assets/react.svg';
 import Componente from './components/Componente.jsx';
 import './App.css';
 import Propiedades from './components/Propiedades.jsx';
+import Estado from './components/Estado.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -66,6 +67,9 @@ function App() {
       elementoReact={<i>Esto es un elemento React</i>}
       componenteReact={<Componente msg="Soy un componente pasado como props" />}
     />
+    <hr />
+    <Estado>Hola</Estado>
+    <hr />
     </section>
     </header>
     </>
