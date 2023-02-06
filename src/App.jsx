@@ -7,7 +7,8 @@ import Propiedades from './components/Propiedades.jsx';
 import Estado from './components/Estado.jsx';
 import RenderizadoCondicional from './components/Renderizado';
 import RenderizadoElementos from './components/RenderizadoElementos';
-import Eventos from './components/Eventos';
+import {EventosES6} from './components/Eventos';
+import {EventosES7} from './components/Eventos';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -77,7 +78,9 @@ function App() {
     <hr />
     <RenderizadoElementos />
     <hr />
-    <Eventos />
+    <EventosES6 />
+    <hr />
+    <EventosES7 />
     <hr />
     </section>
     </header>
