@@ -17,11 +17,12 @@ import RelojHooks from './components/RelojHooks';
 import AjaxHooks from './components/AjaxHooks';
 import HookPersonalizados from './components/HooksPersonalizados';
 import Referencias from './components/Referencias';
+import Formularios from './components/Formularios';
 
 
 function App() {
   const [count, setCount] = useState(0)
-  let nombre = 'Juan';
+  let nombr = 'Juan';
   let auth = true;
   let estaciones = ["Primavera", "Verano", "Otoño", "Invierno"];
   return (
@@ -52,10 +53,10 @@ function App() {
       </p>
     </section>
     <section>
-          <label htmlFor='nombre'>Nombre </label>
+          <label htmlFor='nombr'>Nombre </label>
       <br></br>
-      <input type='text' id='nombre' />
-      <h2>{nombre}</h2>
+      <input type='text' id='nombr' />
+      <h2>{nombr}</h2>
       <p>{auth ? "El usuario está logueado" : "El usuario no está logueado"}</p>
       <p>{ 2+1 }</p>
       <ul>
@@ -110,6 +111,8 @@ function App() {
     <HookPersonalizados />
     <hr />
     <Referencias />
+    <hr />
+    <Formularios />
     <hr />
     </section>
     </header>
