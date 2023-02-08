@@ -14,6 +14,7 @@ import AjaxApis from './components/AjaxApis';
 import ContadorHooks from './components/ContadorHooks';
 import ScroolHooks from './components/ScrollHooks';
 import RelojHooks from './components/RelojHooks';
+import AjaxHooks from './components/AjaxHooks';
 
 
 function App() {
@@ -101,6 +102,8 @@ function App() {
     <ScroolHooks />
     <hr />
     <RelojHooks />
+    <hr />
+    <AjaxHooks />
     <hr />
     </section>
     </header>
