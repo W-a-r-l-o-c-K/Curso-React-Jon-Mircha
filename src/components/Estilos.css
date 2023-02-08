@@ -1,0 +1,17 @@
+.estilos h3 {
+    padding: 2rem;
+    text-align: center;
+}
+
+.bg-react {
+    background-color: #61dafb;
+}
+
+.bg-sass {
+    background-color: #bf4080;
+    transition: background-color .5s ease-in-out;  
+}
+
+.bg-sass:hover {
+        background-color: #bf408080;
+    }
